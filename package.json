@@ -1,0 +1,21 @@
+{
+  "name": "webgen-gambia",
+  "version": "1.0.0",
+  "description": "KOK Web Services — WebGen Gambia: Cloudflare Worker API + static Pages frontend",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy:worker": "wrangler deploy",
+    "deploy:pages": "wrangler pages deploy . --project-name=webgen-gambia",
+    "deploy": "npm run deploy:worker && npm run deploy:pages",
+    "kv:list": "wrangler kv key list --binding=WEBGEN_KV",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

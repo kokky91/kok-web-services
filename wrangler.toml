@@ -18,6 +18,9 @@ main = "worker.js"
 compatibility_date = "2024-09-01"
 compatibility_flags = ["nodejs_compat"]
 
+# Pages static assets — root of repo is the site to upload
+pages_build_output_dir = "."
+
 # KV Storage — vul je eigen IDs in na stap 3 & 4 hierboven
 [[kv_namespaces]]
 binding = "WEBGEN_KV"
